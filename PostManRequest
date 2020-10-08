@@ -1,0 +1,34 @@
+POST /notificationQueue HTTP/1.1
+Host: localhost:8080
+Content-Type: application/json
+Cache-Control: no-cache
+Postman-Token: e12123d6-f833-ad2c-a6fa-a207ebe9e0d5
+
+{
+	"email" :[{
+			"from":"noreply@kapturecrm.com",
+			"to":"vikas@kapturecrm.com",
+			"subject":"Hello",
+			"Body":"body of the email"
+		},
+		{
+			"from":"noreply@kapturecrm.com",
+			"to":"vikas@kapturecrm.com",
+			"subject":"Hello Another Email",
+			"Body":"body of the email"
+		}],
+
+	"sms":[
+		{
+			"from":"+91 9999999999",
+			"to":"+91 8888888888",
+			"Body":"body of the sms"
+		},
+		{
+			"from":"+91 9999999999",
+			"to":"+91 8888888888",
+			"Body":"body of the sms 2"
+		}]
+
+}
+
